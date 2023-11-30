@@ -2,6 +2,7 @@ function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
 
     if (elemento && elemento.localName === 'audio') {
+        elemento.currentTime = 0;
         elemento.play();
     }
     else {
@@ -40,20 +41,20 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 
 const TECLADO_E_SOM = {
-    Numpad7: '#som_tecla_pom',
-    Numpad8: '#som_tecla_clap',
-    Numpad9: '#som_tecla_tim',
+    7: '#som_tecla_pom',
+    8: '#som_tecla_clap',
+    9: '#som_tecla_tim',
 
-    Numpad4: '#som_tecla_puff',
-    Numpad5: '#som_tecla_splash',
-    Numpad6: '#som_tecla_toim',
+    4: '#som_tecla_puff',
+    5: '#som_tecla_splash',
+    6: '#som_tecla_toim',
     
-    Numpad1: '#som_tecla_psh',
-    Numpad2: '#som_tecla_tic',
-    Numpad3: '#som_tecla_tom',
+    1: '#som_tecla_psh',
+    2: '#som_tecla_tic',
+    3: '#som_tecla_tom',
 }
 
 document.addEventListener('keydown', function(evento) {
-    console.log(evento.code);
-    tocaSom(TECLADO_E_SOM[evento.code]);
+    console.log(evento.key);
+    tocaSom(TECLADO_E_SOM[evento.key]);
 });
