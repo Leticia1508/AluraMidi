@@ -1,9 +1,9 @@
 :root {
-  --cinza: #aaa;
+  --cinza: #E8546A;
   --vermelha: #e93d50;
   --vermelha-escura: #af303f;
-  --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --branca:#F6F6E9;
+  --luz: #CB489D;
 }
 
 body {
@@ -14,6 +14,11 @@ body {
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background-image: url("./../images/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  margin: 0;
 }
 
 h1 {
@@ -23,8 +28,8 @@ h1 {
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
-  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  background: linear-gradient(to bottom, #D8E481 0%,#E8546A 100%);
+  box-shadow: 6px 8px 0 6px #CC7CB0, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
   gap: 10px;
